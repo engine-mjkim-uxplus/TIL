@@ -1,4 +1,4 @@
-# Http 요청과 응답(HttpServletRequest)
+#  요청과 응답(HttpServletRequest)
 ### HttpServletRequest 메소드
 ~~~java
 @Controller
