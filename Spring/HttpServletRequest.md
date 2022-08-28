@@ -59,6 +59,7 @@ request.getRemotePort()=4137
 - 메소드의 매개변수로 HttpServletRequest 및 HttpServletResponse를 받기만 하면 이 객체를 톰캣이 만들어서 준다.
 - 그러므로 개발자는 톰캣이 만들어준 객체를 활용하여 브라우저에 출력할 수 있다.
 - 브라우저에 출력하기 위해서는 reponse 객체로부터 getWriter()메소드를 호출하여 PrintWriter  얻어야 한다.
+- response.setCharacterEncoding("utf-8")이 없으면 브라우저에서 한글이 깨진다. 
 
 ~~~java
 @Controller
