@@ -31,7 +31,7 @@ public class RequestInfo {
         System.out.println("request.getRemotePort()="+request.getRemotePort()); // 원격 포트
 ~~~
 
-`실행결과`
+`***실행결과***`
 
 ~~~text
 request.getCharacterEncoding()=UTF-8
