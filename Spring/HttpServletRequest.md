@@ -1,6 +1,6 @@
-# Http 요청과 응답
+# Http 요청과 응답(HttpServletRequest)
 
-```java
+~~~java
 @Controller
 public class RequestInfo {
     @RequestMapping("/requestInfo")
@@ -29,11 +29,11 @@ public class RequestInfo {
         System.out.println("request.getRemoteAddr()="+request.getRemoteAddr()); // 원격 ip주소
         System.out.println("request.getRemoteHost()="+request.getRemoteHost()); // 원격 호스트 또는 ip주소
         System.out.println("request.getRemotePort()="+request.getRemotePort()); // 원격 포트
-```
+~~~
 
 실행결과
 
-```text
+~~~text
 request.getCharacterEncoding()=UTF-8
 request.getContentLength()=-1
 request.getContentType()=null
@@ -52,4 +52,51 @@ request.getLocalPort()=8080
 request.getRemoteAddr()=0:0:0:0:0:0:0:1
 request.getRemoteHost()=0:0:0:0:0:0:0:1
 request.getRemotePort()=4137
-```
+~~~
+---
+### 날짜 출력하기 코드
+
+~~~java
+@Controller
+public class YoilTeller {
+    @RequestMapping("/getYoil") // http://localhost:8080/ch2/getYoil?year=2021&month=10&day=1
+    //    public static void main(String[] args) {
+    public void main(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        // 1. 입력
+//        String year = args[0];
+//        String month = args[1];
+//        String day = args[2];
+        String year = request.getParameter("year");
+        String month = request.getParameter("month");
+        String day = request.getParameter("day");
+
+        int yyyy = Integer.parseInt(year);
+        int mm = Integer.parseInt(month);
+        int dd = Integer.parseInt(day);
+
+        // 2. 처리
+        Calendar cal = Calendar.getInstance();
+        cal.set(yyyy, mm - 1, dd);
+
+        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+        char yoil = " 일월화수목금토".charAt(dayOfWeek);
+
+        // 3. 출력
+//        System.out.println(year + "년 " + month + "월 " + day + "일은 ");
+//        System.out.println(yoil + "요일입니다.");
+        response.setContentType("text/html");    // 응답의 형식을 html로 지정
+        response.setCharacterEncoding("utf-8");  // 응답의 인코딩을 utf-8로 지정
+        PrintWriter out = response.getWriter();  // 브라우저로의 출력 스트림(out)을 얻는다.
+        out.println("<html>");
+        out.println("<head>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println(year + "년 " + month + "월 " + day + "일은 ");
+        out.println(yoil + "요일입니다.");
+        out.println("</body>");
+        out.println("</html>");
+        out.close();
+    }
+}
+~~~
+
