@@ -19,7 +19,7 @@
     </a>
   </li>
    <li>
-   <a src="https://github.com/odong2/TIL/blob/main/Spring/%EC%84%A4%EC%A0%95%ED%8C%8C%EC%9D%BC.md">설정 파일</a>
+   <a href="https://github.com/odong2/TIL/blob/main/Spring/%EC%84%A4%EC%A0%95%ED%8C%8C%EC%9D%BC.md">설정 파일</a>
   </li>
 </ul>
 
