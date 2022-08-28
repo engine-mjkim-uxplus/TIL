@@ -1,6 +1,8 @@
-#  요청과 응답(HttpServletRequest)
+## 요청과 응답(HttpServletRequest)
+
 ### HttpServletRequest 메소드
-~~~java
+
+```java
 @Controller
 public class RequestInfo {
     @RequestMapping("/requestInfo")
@@ -29,11 +31,11 @@ public class RequestInfo {
         System.out.println("request.getRemoteAddr()="+request.getRemoteAddr()); // 원격 ip주소
         System.out.println("request.getRemoteHost()="+request.getRemoteHost()); // 원격 호스트 또는 ip주소
         System.out.println("request.getRemotePort()="+request.getRemotePort()); // 원격 포트
-~~~
+```
 
 **실행결과**
 
-~~~text
+```text
 request.getCharacterEncoding()=UTF-8
 request.getContentLength()=-1
 request.getContentType()=null
@@ -52,16 +54,18 @@ request.getLocalPort()=8080
 request.getRemoteAddr()=0:0:0:0:0:0:0:1
 request.getRemoteHost()=0:0:0:0:0:0:0:1
 request.getRemotePort()=4137
-~~~
+```
+
 ---
+
 ### 날짜 출력하기 코드
 
 - 메소드의 매개변수로 HttpServletRequest 및 HttpServletResponse를 받기만 하면 이 객체를 톰캣이 만들어서 준다.
 - 그러므로 개발자는 톰캣이 만들어준 객체를 활용하여 브라우저에 출력할 수 있다.
-- 브라우저에 출력하기 위해서는 reponse 객체로부터 getWriter()메소드를 호출하여 PrintWriter  얻어야 한다.
+- 브라우저에 출력하기 위해서는 reponse 객체로부터 getWriter()메소드를 호출하여 PrintWriter 얻어야 한다.
 - response.setCharacterEncoding("utf-8")이 없으면 브라우저에서 한글이 깨진다. (텍스트의 인코딩 타입을 브라우저에게 알려줘야 한다)
 
-~~~java
+```java
 @Controller
 public class YoilTeller {
     @RequestMapping("/getYoil") // http://localhost:8080/ch2/getYoil?year=2021&month=10&day=1
@@ -103,6 +107,4 @@ public class YoilTeller {
         out.close();
     }
 }
-~~~
-
-
+```
