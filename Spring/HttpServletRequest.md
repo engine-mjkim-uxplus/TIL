@@ -1,5 +1,5 @@
 # Http 요청과 응답(HttpServletRequest)
-
+### HttpServletRequest 메소드
 ~~~java
 @Controller
 public class RequestInfo {
@@ -56,6 +56,10 @@ request.getRemotePort()=4137
 ---
 ### 날짜 출력하기 코드
 
+- 메소드의 매개변수로 HttpServletRequest 및 HttpServletResponse를 받기만 하면 이 객체를 톰캣이 만들어서 준다.
+- 그러므로 개발자는 톰캣이 만들어준 객체를 활용하여 브라우저에 출력할 수 있다.
+- 브라우저에 출력하기 위해서는 reponse 객체로부터 getWriter()메소드를 호출하여 PrintWriter  얻어야 한다.
+
 ~~~java
 @Controller
 public class YoilTeller {
@@ -100,7 +104,4 @@ public class YoilTeller {
 }
 ~~~
 
-- 메소드의 매개변수로 HttpServletRequest 및 HttpServletResponse를 받기만 하면 이 객체를 톰캣이 만들어서 준다.
-- 그러므로 개발자는 톰캣이 만들어준 객체를 활용하여 브라우저에 출력할 수 있다.
-- 브라우저에 출력하기 위해서는 reponse 객체로부터 getWriter()메소드를 호출하여 PrintWriter  얻어야 한다.
 
