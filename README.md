@@ -17,7 +17,6 @@
 </li>
 
 ## Spring
-<ul>
   <li>
   <a href="https://odon2.tistory.com/15?category=578706">
   원격 프로그램의 실행<a/>
@@ -51,5 +50,4 @@
    <li>
    <a href="https://odon2.tistory.com/29?category=578706">@WebDataBinder</a>
   </li>
-</ul>
 
