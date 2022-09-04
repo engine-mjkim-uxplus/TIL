@@ -11,15 +11,33 @@
   원격 프로그램의 실행<a/>
   </li>
   <li>
-  <a href="https://github.com/odong2/TIL/blob/main/Spring/HttpServletRequest.md">HttpServletRequest</a>
+  <a href="https://odon2.tistory.com/16?category=578706">HttpServletRequest</a>
   </li>
   <li>
-   <a href="https://github.com/odong2/TIL/blob/main/Spring/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%99%80%20%EC%84%9C%EB%B2%84.md">
+   <a href="https://odon2.tistory.com/17?category=578706">
    클라이언트와 서버
     </a>
   </li>
    <li>
-   <a href="https://github.com/odong2/TIL/blob/main/Spring/%EC%84%A4%EC%A0%95%ED%8C%8C%EC%9D%BC.md">설정 파일</a>
+   <a href="https://odon2.tistory.com/18?category=578706">톰캣 설정 파일</a>
+  </li>
+   <li>
+   <a href="https://odon2.tistory.com/19?category=578706">HTTP 요청과 응답</a>
+  </li>
+     <li>
+   <a href="https://odon2.tistory.com/21?category=578706">텍스트와 바이너리</a>
+  </li>
+   <li>
+   <a href="https://odon2.tistory.com/22?category=578706">관심사의 분리 및 MVC패턴</a>
+  </li>
+   <li>
+   <a href="https://odon2.tistory.com/27?category=578706">@RequestParam</a>
+  </li>
+   <li>
+   <a href="https://odon2.tistory.com/28?category=578706">@ModelAttribute</a>
+  </li>
+   <li>
+   <a href="https://odon2.tistory.com/29?category=578706">@WebDataBinder</a>
   </li>
 </ul>
 
