@@ -74,4 +74,7 @@
    <li>
    <a href="https://odon2.tistory.com/29?category=578706">@WebDataBinder</a>
   </li>
+   <li>
+   <a href="https://odon2.tistory.com/30">@GetMapping & PostMapping</a>
+  </li>
 
