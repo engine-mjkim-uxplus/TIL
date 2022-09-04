@@ -1,4 +1,28 @@
 ## Today I Learend 저장소
+
+## Java
+<li>
+  <a href="https://odon2.tistory.com/2?category=555615">Compiler</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/3?category=555615">Scanner next(), nextLine()</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/4?category=555615">JVM 메모리 구조</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/6?category=555615">논리 연산자 &, && ,| , || 차이</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/7?category=555615">syntax error: insert } to complete ClassBody</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/8?category=555615">Object toString()</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/23?category=555615">StringTokenizer</a>
+</li>
+
 ## Servlet
 <li>
   <a href="https://github.com/odong2/TIL/blob/main/Servlet%20%26%20Jsp/Servlet%26jsp.md">Servlet&Jsp</a>
