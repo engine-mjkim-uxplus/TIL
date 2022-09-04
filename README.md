@@ -3,6 +3,18 @@
 <li>
   <a href="https://github.com/odong2/TIL/blob/main/Servlet%20%26%20Jsp/Servlet%26jsp.md">Servlet&Jsp</a>
 </li>
+<li>
+  <a href="https://odon2.tistory.com/20?category=578707">EL표기법</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/24?category=578707">서블릿 & JSP 생명주기</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/25?category=578707">서블릿 기본객체 저장소</a>
+</li>
+<li>
+  <a href="https://odon2.tistory.com/26?category=578707">서블릿 URL 패턴</a>
+</li>
 
 ## Spring
 <ul>
