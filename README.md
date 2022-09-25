@@ -81,7 +81,7 @@
    <a href="https://odon2.tistory.com/32">Junit(TDD)</a>
   </li>
    <li>
-   <a href="https://odon2.tistory.com/33">Junit(TDD)</a>
+   <a href="https://odon2.tistory.com/33">Transaction Isolation level</a>
   </li>
 
 
